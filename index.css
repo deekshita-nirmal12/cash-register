@@ -1,6 +1,5 @@
-/* *{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-} */
 
 .container{
     display: flex;
@@ -8,4 +7,59 @@
     width:50vw;
 }
 
+body{
+    
+    margin: 0px;
+    font-family: 'Open Sans';
+ 
+}
+
+/* got the font from google font */
+
+hr {
+
+    margin: 2rem 0rem;
+}
+
+/* spaces */
+
+.margin-md{
+    margin: 2rem;
+}
+
+/* .section{
+    padding:2rem;
+} */
+
+/* .section-color{
+    background-color: #BFDBFE;
+} */
+
+/**container**/
+.container {
+     padding: 2rem 2rem;
+     
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    /* background-color: burlywood; */
+    background-color:
+  #C7D2FE;
+}
+
+table, tr {
+    border: 1px solid black;
+    text-align: center;
+    
+ }
+
+
+.heading{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
 

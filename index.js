@@ -4,7 +4,7 @@ const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
-const availableNotes = [2000, 500, 100, 50, 20, 10, 5, 1];
+const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMessage();
@@ -24,15 +24,16 @@ checkButton.addEventListener("click", function validateBillAndCashAmount(){
   }
 });
 
-function calculateChange(amountToBeReturned){
+function calculateChange(amountToBeReturned){  //2010
     //go over all the notes available
 for(let i = 0; i < availableNotes.length; i++){
     
     //no. of notes needed for the denomination
-    const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
-
+    const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);  //2010/2000 = 1
+                                              
+ 
 //amount left after calculating the number of notes needed
-    amountToBeReturned %= availableNotes[i];
+    amountToBeReturned %= availableNotes[i];   // 2010 % 2000 =10
 
     //updating the no. of notes in table
     noOfNotes[i].innerText = numberOfNotes; 

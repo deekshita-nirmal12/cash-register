@@ -7,22 +7,31 @@
     <link rel="stylesheet" href="./index.css">
     <title>cash register</title>
 </head>
+<br>
+<br>
+<br>
+<br>
 <body>
-    <div class="container">
+    <section class="section section-color">
+    <div class="container container-center margin-md">
     <h1 class="heading"> Cash Register </h1>
      <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return</p>
      <label for="bill-amount">Bill Amount:</label>
      <input id="bill-amount" type="text" />
      <!-- <button>Next</button> -->
      <label for="cash-given"> Cash Given: </label>
+     
      <input id="cash-given" type="text"/>
+     <br>
+     
      <button id="check-button"> Check</button>
-     <p id="error-message">
-
-     </p>
     
+     <p id="error-message">
+     </p>
+
         <table class="change-table">
             <caption>Return Change</caption>
+        
                  <tr>
                      <th>No. of notes</th>
                        <td class="no-of-notes"></td>
@@ -33,13 +42,14 @@
                        <td class="no-of-notes"></td>
                        <td class="no-of-notes"></td>
                        <td class="no-of-notes"></td>
-
-                                   
+                       <td class="no-of-notes"></td>
+                                  
                  </tr>
                  <tr>
                      <th>Note</th>
                      <td>2000</td>
                      <td>500</td>
+                     <td>200</td>
                      <td>100</td>
                      <td>50</td>
                      <td>20</td>
@@ -50,6 +60,7 @@
 
                 </table>
 </div>
+</section>
 </body>
 <script src="./index.js" type="text/javascript"></script>
 </html>
