@@ -45,21 +45,28 @@ hr {
     max-width: 600px;
     margin: auto;
     /* background-color: burlywood; */
-    background-color:
-  #C7D2FE;
+    background-color: #557A95;
 }
 
-table, tr {
-    border: 1px solid black;
+table,tr,th,td {
+    border: 1px solid white;
     text-align: center;
-    
- }
 
+
+ }
+.labelofcheck{
+  color:#557A95;
+}
 
 .heading{
     text-align: center;
 }
 .description{
     text-align: center;
+}
+
+.primary-color{
+    color:white;
+    
 }
 
